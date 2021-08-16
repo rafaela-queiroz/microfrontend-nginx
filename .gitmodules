@@ -1,9 +1,12 @@
 [submodule "home-project"]
 	path = home-project
 	url = git@github.com:rafaela-queiroz/home-project.git
+	branch = main
 [submodule "angular-project"]
 	path = angular-project
 	url = git@github.com:rafaela-queiroz/angular-project.git
+	branch = main
 [submodule "react-project"]
 	path = react-project
 	url = git@github.com:rafaela-queiroz/react-project.git
+	branch = main
