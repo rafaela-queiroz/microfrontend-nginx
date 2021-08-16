@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  home-project:
+    container_name: home-project
+    build:
+      context: ./home-project
+
+  angular-project:
+    container_name: angular-project
+    build:
+      context: ./angular-project
+
+  react-project:
+    container_name: react-project
+    build:
+      context: ./react-project
+
+  orchestrator:
+    container_name: orchestrator
+    ports:
+      - 80:80
+    depends_on:
+      - home-project
+      - angular-project
+      - react-project
+    build:
+      context: .
